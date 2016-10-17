@@ -1,0 +1,58 @@
+body {
+	font-size: 0;
+	}
+
+.colorOverlay {
+	transition: all ease 0.5s;
+	}
+
+.clock-block {
+	background: radial-gradient(circle, white, rgba(0, 0, 0, .5));
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	font-size: 120px;
+	display: inline-block;
+	}
+
+#clock {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: all ease 0.5s;
+	}
+
+#color {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	z-index: 2;
+	transition: all ease 0.5s;
+	}	
+
+.timeBarContainer {
+	width: 800px;
+	height: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: 130px;
+	transform: translateX(-50%);
+	}
+
+#timeBarProgress {
+	background-color: black;
+	height: 10px;
+	margin: auto;
+	}
+
+ #color:hover {
+	opacity: 1;
+	}
+
+#color:hover ~ #clock {
+	opacity: 0;
+	} 
